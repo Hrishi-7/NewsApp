@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".RegisterFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/loginButton"
+        android:background="@drawable/customlayoutbg">
+
+        <TextView
+            android:id="@+id/txtcreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Create an Account"
+            android:textColor="@color/orange"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="200sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="30dp"
+            android:textSize="14sp"
+            android:layout_below="@id/txtcreate"
+            android:textStyle="bold"
+            android:id="@+id/txtName"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:text="Name"/>
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtName"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="30dp"
+            android:drawableEnd="@drawable/ic_baseline_person_24"
+            android:hint="John Doe" />
+        <TextView
+            android:layout_width="200sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="30dp"
+            android:textSize="14sp"
+            android:layout_below="@id/edtName"
+            android:textStyle="bold"
+            android:id="@+id/txtEmail"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:text="Email"/>
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtEmail"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="30dp"
+            android:drawableEnd="@drawable/ic_baseline_email_24"
+            android:hint="Johndoe@gmail.com" />
+        <TextView
+            android:layout_width="200sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="30dp"
+            android:textSize="14sp"
+            android:layout_below="@id/edtEmail"
+            android:textStyle="bold"
+            android:id="@+id/txtPhone"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:text="Contact No."/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtPhone"
+            android:layout_marginTop="5dp"
+            android:id="@+id/llOne"
+            android:orientation="horizontal"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/flag_of_india"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IN"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+91"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_arrow_drop_down_24"/>
+            <EditText
+                android:id="@+id/edtPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPhone"
+                android:layout_marginStart="10dp"
+                android:hint="9876543210"
+                android:drawableEnd="@drawable/ic_baseline_local_phone_24"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="200sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="30dp"
+            android:textSize="14sp"
+            android:layout_below="@id/llOne"
+            android:textStyle="bold"
+            android:id="@+id/txtPassword"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:text="Password"/>
+
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtPassword"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="30dp"
+            android:drawableEnd="@drawable/ic_baseline_lock_24"
+            android:hint="********"
+            android:inputType="textPassword" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:orientation="horizontal"
+            android:id="@+id/llTwo"
+            android:layout_below="@id/edtPassword">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/orange"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I agree with"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="term &amp; condition"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/orange"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_below="@id/llTwo">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an Account?"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign In!"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/orange"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/custombuttonbg"
+        android:text="Register" />
+</RelativeLayout>

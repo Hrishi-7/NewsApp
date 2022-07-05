@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "458315456901",
+    "project_id": "newsapp-68d41",
+    "storage_bucket": "newsapp-68d41.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:458315456901:android:433b8cb84234dabbc2e4ec",
+        "android_client_info": {
+          "package_name": "com.hrishikesh.newsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "458315456901-ge5n3ccsql9s5f8nqa7p9mbq3lmof032.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hrishikesh.newsapp",
+            "certificate_hash": "c723d14692ed193e546cd29d41bf92f12ac5d756"
+          }
+        },
+        {
+          "client_id": "458315456901-ccl6dto45d4e4taramnmiebf0eo9cnbg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChUcCc3cM3xVHcDIOOWges20sLmf7-1uE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "458315456901-ccl6dto45d4e4taramnmiebf0eo9cnbg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
